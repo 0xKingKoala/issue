@@ -5,11 +5,15 @@
   "exports": {
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./code": "./src/code.tsx",
+    "./user-info-package": "./src/user-info-package.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component"
+  },
+  "peerDependencies": {
+    "wagmi": "^2.12.16"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
